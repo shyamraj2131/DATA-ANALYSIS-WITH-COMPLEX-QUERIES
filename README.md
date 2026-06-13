@@ -9,7 +9,8 @@ The entire task is divided into three sections — Section A covers Subqueries, 
 Section A — Subqueries
 A subquery is a query written inside another query. It is used when the answer to one question depends on the result of another question.
 The first query in this section finds all students whose CGPA is above the average CGPA of the entire batch. The inner query calculates the average CGPA first, and the outer query then uses that result to filter students. This is useful for shortlisting high-performing students quickly.
-The second query uses an EXISTS subquery to find students who have already been placed. Instead of joining tables directly, it checks whether a matching record exists in the Placements table for each student. This is a more efficient approach when you only need to check for the presence of a record rather than retrieve data from it.<img width="369" height="106" alt="Image" src="https://github.com/user-attachments/assets/d36bfce8-d247-44fe-a550-434f03d4306b" />
+The second query uses an EXISTS subquery to find students who have already been placed. Instead of joining tables directly, it checks whether a matching record exists in the Placements table for each student. This is a more efficient approach when you only need to check for the presence of a record rather than retrieve data from it.
+<img width="369" height="106" alt="Image" src="https://github.com/user-attachments/assets/d36bfce8-d247-44fe-a550-434f03d4306b" />
 The third query is a correlated subquery that finds the company offering the highest salary package. It uses MAX() inside the WHERE clause to compare each placement record against the overall maximum salary. This helps identify the top-paying company in the current hiring cycle.
 
 # OUTPUT
