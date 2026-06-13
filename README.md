@@ -13,7 +13,7 @@ The second query uses an EXISTS subquery to find students who have already been 
 The third query is a correlated subquery that finds the company offering the highest salary package. It uses MAX() inside the WHERE clause to compare each placement record against the overall maximum salary. This helps identify the top-paying company in the current hiring cycle.
 
 # OUTPUT
-<img width="357" height="110" alt="Image" src="https://github.com/user-attachments/assets/e3fd21e1-212c-49fe-8512-a5eb4ad4e4c6" />
+<img width="357" height="110" alt="Image" src="https://github.com/user-attachments/assets/e3fd21e1-212c-49fe-8512-a5eb4ad4e4c6" />,<img width="369" height="106" alt="Image" src="https://github.com/user-attachments/assets/d36bfce8-d247-44fe-a550-434f03d4306b" />
 
 
 Section B — Window Functions
