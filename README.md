@@ -1,18 +1,5 @@
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-Task 2 — Data Analysis with Complex SQL Queries
+# TASK 2 — Data Analysis with Complex SQL Queries
 Overview
 This task is part of the CODTECH IT Solutions SQL Internship program. The goal of this task is to perform advanced data analysis on a Student Placement System database using three powerful SQL techniques — Subqueries, Window Functions, and Common Table Expressions (CTEs). The database contains information about students, companies, job postings, applications, and placements. Using complex SQL queries, meaningful trends and patterns are discovered from this data and presented as an analytics report.
 
@@ -24,6 +11,10 @@ A subquery is a query written inside another query. It is used when the answer t
 The first query in this section finds all students whose CGPA is above the average CGPA of the entire batch. The inner query calculates the average CGPA first, and the outer query then uses that result to filter students. This is useful for shortlisting high-performing students quickly.
 The second query uses an EXISTS subquery to find students who have already been placed. Instead of joining tables directly, it checks whether a matching record exists in the Placements table for each student. This is a more efficient approach when you only need to check for the presence of a record rather than retrieve data from it.
 The third query is a correlated subquery that finds the company offering the highest salary package. It uses MAX() inside the WHERE clause to compare each placement record against the overall maximum salary. This helps identify the top-paying company in the current hiring cycle.
+
+# OUTPUT
+<img width="357" height="110" alt="Image" src="https://github.com/user-attachments/assets/e3fd21e1-212c-49fe-8512-a5eb4ad4e4c6" />
+
 
 Section B — Window Functions
 Window functions perform calculations across a set of related rows without collapsing them into a single result like GROUP BY does. Each row keeps its own identity while also getting an additional calculated value.
